@@ -13,7 +13,7 @@ public class PetRepository {
     JdbcTemplate jdbcTemplate;
 
     public void addPet(Pet pet) {
-        jdbcTemplate.update("INSERT INTO test.pet VALUES (?, ?, ?, ?)", pet.getid(), pet.gettype(), pet.getgender(), pet.getage());
+        jdbcTemplate.update("INSERT INTO test.pet VALUES (?, ?, ?, ?)", pet.getId(), pet.gettype(), pet.getgender(), pet.getage());
     }
 
     public Pet getPet(Integer petId) {

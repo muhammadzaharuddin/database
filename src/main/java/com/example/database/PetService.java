@@ -7,7 +7,6 @@ import java.util.*;
 @Service
 public class PetService {
 
-    List<Pet> PetList = new ArrayList<>();
     @Autowired
     PetRepository petRepo;
 

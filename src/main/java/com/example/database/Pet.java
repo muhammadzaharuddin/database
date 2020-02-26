@@ -26,4 +26,5 @@ public class Pet {
     public Object getgender() { return gender; }
 
     public Object getage() { return age; }
+
 }
