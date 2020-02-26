@@ -2,7 +2,7 @@ package com.example.database;
 
 import lombok.*;
 
-@Getter @Setter @NoArgsConstructor @Data @Builder @AllArgsConstructor
+@Data
 public class Pet {
 
     private Integer id;
@@ -17,14 +17,5 @@ public class Pet {
         this.age = age;
     }
 
-    public Object getid() {
-        return id;
-    }
-
-    public Object gettype() { return type; }
-
-    public Object getgender() { return gender; }
-
-    public Object getage() { return age; }
 
 }

@@ -13,7 +13,7 @@ public class PetRepository {
     JdbcTemplate jdbcTemplate;
 
     public void addPet(Pet pet) {
-        jdbcTemplate.update("INSERT INTO test.pet VALUES (?, ?, ?, ?)", pet.getId(), pet.gettype(), pet.getgender(), pet.getage());
+        jdbcTemplate.update("INSERT INTO test.pet VALUES (?, ?, ?, ?)", pet.getId(), pet.getType(), pet.getGender(), pet.getAge());
     }
 
     public Pet getPet(Integer petId) {
@@ -49,7 +49,7 @@ public class PetRepository {
     }
 
     public void updatePet(Integer petId, Pet newPet) {
-        jdbcTemplate.update("UPDATE test.pet SET id = ?, type = ?, gender = ?, age = ? WHERE id = ?", newPet.getid(), newPet.gettype(), newPet.getgender(), newPet.getage(), petId);
+        jdbcTemplate.update("UPDATE test.pet SET id = ?, type = ?, gender = ?, age = ? WHERE id = ?", newPet.getId(), newPet.getType(), newPet.getGender(), newPet.getAge(), petId);
     }
 
     public void deletePet(Integer petId) {
